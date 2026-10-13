@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:Poof}",
+            "name": "Debug Poof",
+            "target": "Poof",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug Poof"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:Poof}",
+            "name": "Release Poof",
+            "target": "Poof",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release Poof"
+        }
+    ]
+}
