@@ -12,8 +12,9 @@ final class TextInjector {
 
     sendBackspaces(count: deleteCount)
 
-    let injectedByKeystrokes = injectTextByKeystroke(replacementText)
-    if !injectedByKeystrokes {
+    if replacementText.contains("\n") || replacementText.contains("\r") {
+      injectTextByClipboardPaste(replacementText)
+    } else if !injectTextByKeystroke(replacementText) {
       injectTextByClipboardPaste(replacementText)
     }
 
